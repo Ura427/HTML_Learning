@@ -15,15 +15,23 @@ a{
 }
 
 .header{
+    display: flex;
+    border: 1px solid green;
     height:50px;
-    line-height: 50px;
     background-color: black;
 }
 
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
 .nav-list li{
-  display: inline-block;
-  color:  rgba(255, 255, 255, 0.742);
-  margin-left: 5%;
+    display: inline-block;
+
+    color:  rgba(255, 255, 255, 0.742);
+    margin: 0 10vh;
+    flex-grow: 1;
 }
 
 .nav-list a:hover{
@@ -33,10 +41,9 @@ a{
 }
 
 
-.nav-list li:last-child a{
-    display: block;
-    height: 30px;
-    line-height: 30px;
+.nav-list li:last-of-type a{
+    display: flex;
+    align-items: center;
     background-color: rgb(255, 143, 143);
     
     border-radius: 5px;
