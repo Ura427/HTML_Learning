@@ -1,28 +1,57 @@
-h1{
-    color: blueviolet;
-    font-weight: bold;
-
+body{
+    margin: 0;
+    font-family:'Golos Text', 'Montserrat', 'Roboto Mono';
+    font-weight: 100;
 }
 
-input{
-    color: goldenrod;
+ul{
+    margin: 0;
+    list-style-type: none;
 }
 
-#id{
-    color:aqua
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
-.class{
-    color:greenyellow;
+.header{
+    height:50px;
+    line-height: 50px;
+    background-color: black;
 }
 
-.div{
-    color: darkorange;
-    background-color: aqua;
+.nav-list li{
+  display: inline-block;
+  color:  rgba(255, 255, 255, 0.742);
+  margin-left: 5%;
 }
 
-.div h1{
-    color: red;
-    font-size: large;
+.nav-list a:hover{
+    color: white;
     text-decoration: underline;
+    transition: all .2s ease;
 }
+
+
+.nav-list li:last-child a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(255, 143, 143);
+    
+    border-radius: 5px;
+    padding: 2px 4px;
+    
+  }
+
+  .nav-list li:last-of-type a:hover{
+   
+    background-color: rgb(212, 117, 117);
+    transition: all 0.2s ease;
+    text-decoration: none;
+    
+  }
+
+
+
+
