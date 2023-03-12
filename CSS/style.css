@@ -16,28 +16,33 @@ a{
 
 .header{
     display: flex;
-    border: 1px solid green;
+    justify-content: space-around;
     height:50px;
     background-color: black;
 }
 
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    
+    
+
 }
 
 .nav-list li{
     display: inline-block;
-
+    font-size: large;
     color:  rgba(255, 255, 255, 0.742);
     margin: 0 10vh;
-    flex-grow: 1;
+    
 }
 
 .nav-list a:hover{
     color: white;
     text-decoration: underline;
     transition: all .2s ease;
+    transform: scale(1.2);
 }
 
 
@@ -45,7 +50,6 @@ a{
     display: flex;
     align-items: center;
     background-color: rgb(255, 143, 143);
-    
     border-radius: 5px;
     padding: 2px 4px;
     
@@ -57,6 +61,15 @@ a{
     transition: all 0.2s ease;
     text-decoration: none;
     
+    
+  }
+
+  a{
+    color: aliceblue;
+  }
+
+  a:hover{
+    transform: scale(20);
   }
 
 
