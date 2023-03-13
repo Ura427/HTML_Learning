@@ -1,16 +1,21 @@
 body{
     /* Setting default margin in body tag */
     margin: 0;
+    padding: 0;
     /* Setting fonts */
     font-family:'Golos Text', 'Montserrat', 'Roboto Mono';
     font-weight: 100;
 
+    /* For body::after element to cover all screen  */
+    position: relative;
+
     
-
+    /* Adding background  */
     background-image: url('https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg'); 
-
-    background-position: 0 40px;
     background-size: cover;
+
+    /* Setting page size */
+    height: 2500px;
 }
 
 
@@ -21,11 +26,26 @@ body{
     line-height: 50px;
     background-color: black;
 
-    /* background-image: url('https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg'); 
-
-    background-position: 0 40px; */
+    
+    /* Bringing to the fore */
+    position: relative;
+    z-index: 1;
    
 }
+
+
+body::after{
+    content: "";
+    background: white;
+    position: absolute;
+    opacity: 0.5;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
 
 ul{
     /* Removing default indents and style*/
@@ -50,6 +70,8 @@ a{
 
     justify-content: center;
 
+    
+
 }
 
 .nav-list li{
@@ -70,12 +92,58 @@ a{
 
  /* Footer */
   .footer{
+    /* Basic settings */
     background-color: #DFFF00;
     height: 50px;
     width: 100%;
-    position: fixed; 
+    position: fixed;
     bottom: 0;
+
+    /* Bringing to the fore */
+    z-index: 1;
   }
+
+
+
+  /* Biography */
+
+.main{
+    display: flex;
+    justify-content: cneter;
+    align-items: center;
+}
+
+
+
+
+.Biography{
+    /* Bringing to the fore */
+    position: relative;
+    z-index: 1;
+
+    border: 2px solid red;
+    background-color: white;
+
+
+    width: 30%;
+    margin: 5% auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Biography p{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: 20px;
+    /* width: 200px; */
+    height: 300px
+}
+
 
 
 
